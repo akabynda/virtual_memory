@@ -6,22 +6,12 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 0.1.2">
+    <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 0.1.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/virtual_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtual_memory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +34,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../normal_algo" />
   </component>
   <component name="RunManager">
     <configuration name="virtual_memore" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -101,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601039027706</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version 0.1.3">
+      <created>1601050246575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601050246575</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,7 +118,8 @@
     <MESSAGE value="version 0.1" />
     <MESSAGE value="version 0.1.1" />
     <MESSAGE value="version 0.1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.1.2" />
+    <MESSAGE value="version 0.1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.1.3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601003869977">
@@ -132,18 +130,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601004237633" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1601005107637">
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1601055319175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601005107637" />
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601055319175" />
     <state x="633" y="310" key="Github.ShareDialog" timestamp="1601003894474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="633" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601003894474" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601039030739">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601050255535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601039030739" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601050255535" />
+    <state x="471" y="304" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601056005536">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="471" y="304" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601056005536" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601004787686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
