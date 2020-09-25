@@ -3,6 +3,8 @@ import os
 def parser_args():
     p = argparse.ArgumentParser()
     p.add_argument('--file', type=str)
+    p.add_argument('--list', type=str)
+    p.add_argument('--time', type=str)
     return p
 
 def making_log(file):  #преобразуем прочитанный файл
@@ -34,17 +36,40 @@ def FIFO_log(log):  #преобразуем прочитанный файл
 
 parser = parser_args()
 file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file), encoding="utf - 8")
+list = parser.parse_args().list
+time = parser.parse_args().time
 old_log = making_log(file)
 FIFO_log = []
 print(old_log)
-b = int(old_log[1])
+b = old_log[1]
 a = old_log[0]
+g = old_log[3]
+c = old_log[2]
 print(a)
 print(b)
 FIFO = []
+FIFO_e = []
 for i in range(int(max(a))):
     FIFO.append(0)
+    FIFO_e.append(0)
 for i in range(len(a)):
     j = int(a[i]) - 1
-    FIFO[j] = b[i]
+    FIFO[j] = int(b[i])
+    FIFO_e[j] = int(g[i])
 print(FIFO)
+print(FIFO_e)
+FIFO_bul = True #проверяется есть ли данная страница в оперативной памяти
+for i in range(len(FIFO_e)):
+    if(FIFO_e[i] != list):
+        FIFO_bul = False
+if(FIFO_bul == False):
+    temp = FIFO[0]
+    k = 0
+    for i in range(len(FIFO)):
+        if(FIFO[i] < temp):
+            temp = FIFO[i]
+            k = i
+    FIFO[k] = int(time)
+    FIFO_e[k] = int(list)
+print(FIFO)
+print(FIFO_e)
