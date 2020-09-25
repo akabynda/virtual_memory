@@ -35,7 +35,16 @@ def FIFO_log(log):  #преобразуем прочитанный файл
 parser = parser_args()
 file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file), encoding="utf - 8")
 old_log = making_log(file)
-FIFO_log = FIFO_log(old_log)
+FIFO_log = []
 print(old_log)
-
-#for i in range(a):
+b = int(old_log[1])
+a = old_log[0]
+print(a)
+print(b)
+FIFO = []
+for i in range(int(max(a))):
+    FIFO.append(0)
+for i in range(len(a)):
+    j = int(a[i]) - 1
+    FIFO[j] = b[i]
+print(FIFO)
