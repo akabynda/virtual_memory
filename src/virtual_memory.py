@@ -3,16 +3,17 @@ import os
 def parser_args():
     p = argparse.ArgumentParser()
     p.add_argument('--file', type=str)
-    p.add_argument('--list', type=str)
+    p.add_argument('--page', type=str)
     p.add_argument('--time', type=str)
     return p
 
+
 def making_log(file):  #преобразуем прочитанный файл
     log = file.read().replace(' ', '').replace('#', '').replace(':', '').replace('\n', ';') + ';'
-    a = []
-    b = []
-    c = []
-    g = []
+    a = [] #номера кадра
+    b = [] #время манипуляции
+    c = [] #тип манипуляции
+    g = [] #страницы
     while (log!= ''):
         f1 = log.index(',')
         n = log[:f1]
@@ -25,7 +26,7 @@ def making_log(file):  #преобразуем прочитанный файл
         d = log[(f1 + 8):f2]
         g.append(d)
         log = log[(f2 + 1):]
-    log = [a,b,c,g]
+    log = [a,b,c,g] #
     return log
 
 def LRU_log(log):  # преобразуем прочитанный файл
@@ -35,9 +36,9 @@ def FIFO_log(log):  #преобразуем прочитанный файл
     return log
 
 parser = parser_args()
-file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file), encoding="utf - 8")
-list = parser.parse_args().list
-time = parser.parse_args().time
+file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file + '.txt'), encoding="utf - 8")
+page = parser.parse_args().page
+time = parser.parse_args().time.replace(':', '')
 old_log = making_log(file)
 FIFO_log = []
 print(old_log)
@@ -60,7 +61,7 @@ print(FIFO)
 print(FIFO_e)
 FIFO_bul = True #проверяется есть ли данная страница в оперативной памяти
 for i in range(len(FIFO_e)):
-    if(FIFO_e[i] != list):
+    if(FIFO_e[i] != page):
         FIFO_bul = False
 if(FIFO_bul == False):
     temp = FIFO[0]
@@ -70,6 +71,6 @@ if(FIFO_bul == False):
             temp = FIFO[i]
             k = i
     FIFO[k] = int(time)
-    FIFO_e[k] = int(list)
+    FIFO_e[k] = int(page)
 print(FIFO)
 print(FIFO_e)
