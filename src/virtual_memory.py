@@ -18,7 +18,6 @@ def formating_time(time):
         time = time[:2] + ':' + time[2:]
     return time
 
-
 def making_log(file):  # преобразуем прочитанный файл
     log = file.read().replace(' ', '').replace('#', '').replace(':', '').replace('\n', ';') + ';'
     frames = [] # номера кадра
@@ -189,13 +188,46 @@ def FIFO_algorithm(FIFO_log, page, time, file):
     return FIFO_log # обновляем log
 
 
-parser = parser_args()
-file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file + '.txt'), encoding="utf - 8")
-page = parser.parse_args().page
-time = parser.parse_args().time.replace(':', '')
-algorithm = parser.parse_args().algo
-original_log = making_log(file)
-file.close()
+if __name__ == '__main__':
 
-OPT_log = OPT_algorithm(OPT_log(original_log), page, time, file)
-print(OPT_log)
+    parser = parser_args()
+    file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file + '.txt'),
+                encoding="utf - 8")
+    pages = parser.parse_args().page + ';'
+    times = parser.parse_args().time.replace(':', '') + ';'
+    algorithm = parser.parse_args().algo
+    original_log = making_log(file)
+    file.close()
+    if (algorithm == 'OPT'):
+        OPT_log = OPT_log(original_log)
+        while pages != '':
+            f1 = pages.index(';')
+            page = pages[:f1]
+            pages = pages[(f1 + 1):]
+            f2 = times.index(';')
+            time = times[:f2]
+            times = times[(f2 + 1):]
+            OPT_log = OPT_algorithm(OPT_log, page, time, file)
+            print(OPT_log)
+    elif(algorithm == 'LRU'):
+        LRU_log = LRU_log(original_log)
+        while pages != '':
+            f1 = pages.index(';')
+            page = pages[:f1]
+            pages = pages[(f1 + 1):]
+            f2 = times.index(';')
+            time = times[:f2]
+            times = times[(f2 + 1):]
+            LRU_log = LRU_algorithm(LRU_log, page, time, file)
+            print(LRU_log)
+    elif(algorithm == 'FIFO'):
+        FIFO_log = FIFO_log(original_log)
+        while pages != '':
+            f1 = pages.index(';')
+            page = pages[:f1]
+            pages = pages[(f1 + 1):]
+            f2 = times.index(';')
+            time = times[:f2]
+            times = times[(f2 + 1):]
+            FIFO_log = FIFO_algorithm(FIFO_log, page, time, file)
+            print(FIFO_log)
