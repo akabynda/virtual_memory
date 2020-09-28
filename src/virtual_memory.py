@@ -56,10 +56,10 @@ def OPT_log(log):
         OPT_t[j] = int(times[i])
         OPT_p[j] = int(pages[i])
     OPT_t_max = OPT_t[0]
-    for i in range(len(OPT_t)):
+    for i in range(len(OPT_t)):  # находим макс. время
         if (OPT_t[i] > OPT_t_max):
             OPT_t_max = OPT_t[i]
-    for i in range(len(frames)):
+    for i in range(len(frames)): # высчитываем относительно него разницу
         j = int(frames[i]) - 1
         OPT_t[j] = OPT_t_max - OPT_t[j]
     OPT_log = [OPT_t, OPT_p]
@@ -116,7 +116,7 @@ def OPT_algorithm(OPT_log, page, time, file):
     for i in range(len(OPT_p)): # проверяем наличие страницы
         if (OPT_p[i] == int(page)):
             OPT_bul += 1
-    if (OPT_bul == 0):
+    if (OPT_bul == 0):  # счетчик OPT
         global OPT_count
         OPT_count += 1
     global algorithm
@@ -127,11 +127,11 @@ def OPT_algorithm(OPT_log, page, time, file):
             new_str ='/#' + str(k+1) + ' , ' + formating_time(time) + ' , r , ' + str(page)
         file.write(new_str.replace('/', '\n'))
     OPT_p[k] = int(page)
-    for i in range (len(OPT_t)):
+    for i in range (len(OPT_t)): # скорость работы не позволяет времени измениться, поэтому прибавляем
+                                 # любую константу
         OPT_t[i] += 10
     OPT_t[k] = 0
     OPT_log = [OPT_t, OPT_p]
-    print(OPT_log)
     return OPT_log
 
 def LRU_algorithm(LRU_log, page, time, file):
@@ -156,7 +156,7 @@ def LRU_algorithm(LRU_log, page, time, file):
             LRU_bul += 1
     LRU_t[k] = time
     LRU_p[k] = int(page)
-    if (LRU_bul == 0):
+    if (LRU_bul == 0):  # счетчик LRU
         global LRU_count
         LRU_count += 1
         LRU_m[k] = 'w'
@@ -189,7 +189,7 @@ def FIFO_algorithm(FIFO_log, page, time, file):
         if (FIFO_p[i] == int(page)):
             FIFO_bul += 1
     FIFO_p[k] = int(page)
-    if (FIFO_bul == 0):
+    if (FIFO_bul == 0): # счетчик FIFO
         global FIFO_count
         FIFO_count += 1
     global algorithm
@@ -207,19 +207,21 @@ if __name__ == '__main__':
     parser = parser_args()
     file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', parser.parse_args().file + '.txt'),
                 encoding="utf - 8")
-    pages = parser.parse_args().page + ';'
-    algorithm = parser.parse_args().algo
-    original_log = making_log(file)
+    pages = parser.parse_args().page + ';' # ввод страниц
+    algorithm = parser.parse_args().algo # выбираем алгоритм, который будет работать с файлом
+    original_log = making_log(file) # создаем оригинальный log
     file.close()
-    OPT_count = LRU_count = FIFO_count = 0
+    OPT_count = LRU_count = FIFO_count = 0 # счетчик для теста
     LRU_log = LRU_log(original_log)
     FIFO_log = FIFO_log(original_log)
     OPT_log = OPT_log(original_log)
     while pages != '':
         f1 = pages.index(';')
-        page = pages[:f1]
-        pages = pages[(f1 + 1):]
-        OPT_log = OPT_algorithm(OPT_log, page, time.time() + 60, file)
+        page = pages[:f1] # берем одну страницу
+        pages = pages[(f1 + 1):] # удаляем ее из списка
+        OPT_log = OPT_algorithm(OPT_log, page, time.time() + 60, file) # скорость работы привышает скорость
+                                                                       # обновления времени, поэтому прибавляем
+                                                                       # любую константу
         LRU_log = LRU_algorithm(LRU_log, page, time.time() + 60, file)
         FIFO_log = FIFO_algorithm(FIFO_log, page, time.time() + 60, file)
     print('OPT:', OPT_count, 'FIFO:', FIFO_count, 'LRU:', LRU_count)
