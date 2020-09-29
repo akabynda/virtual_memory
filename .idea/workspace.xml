@@ -12,12 +12,23 @@
   <component name="ChangeListManager">
     <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 0.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/virtual_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtual_memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virtual_memory_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtual_memory_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +45,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CALCULATOR/simple_calculator.py" />
   </component>
   <component name="RunManager">
     <configuration name="virtual_memore" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -161,7 +172,35 @@
       <option name="project" value="LOCAL" />
       <updated>1601324386774</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="version 0.6 with class">
+      <created>1601366776757</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601366776757</updated>
+    </task>
+    <task id="LOCAL-00015" summary="document">
+      <created>1601366807909</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601366807909</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New logs">
+      <created>1601369658989</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1601369658989</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Test v.0.1">
+      <created>1601369685430</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601369685430</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -200,7 +239,11 @@
     <MESSAGE value="version 0.4.1" />
     <MESSAGE value="version 0.5 without comments" />
     <MESSAGE value="version 0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.5" />
+    <MESSAGE value="version 0.6 with class" />
+    <MESSAGE value="document" />
+    <MESSAGE value="New logs" />
+    <MESSAGE value="Test v.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test v.0.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601003869977">
@@ -215,18 +258,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601123759624" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1601310345540">
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1601367014585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601310345540" />
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601367014585" />
     <state x="633" y="310" key="Github.ShareDialog" timestamp="1601003894474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="633" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601003894474" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601324388845">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601369686868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601324388845" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601369686868" />
     <state x="471" y="304" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601057321734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
