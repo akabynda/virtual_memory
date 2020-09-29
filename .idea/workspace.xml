@@ -10,7 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 0.5 without comments">
+    <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 0.5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/virtual_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtual_memory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601323745812</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="version 0.5">
+      <created>1601324243943</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601324243943</updated>
+    </task>
+    <task id="LOCAL-00013" summary="version 0.5">
+      <created>1601324386774</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601324386774</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -184,7 +199,8 @@
     <MESSAGE value="version 0.4" />
     <MESSAGE value="version 0.4.1" />
     <MESSAGE value="version 0.5 without comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.5 without comments" />
+    <MESSAGE value="version 0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601003869977">
@@ -207,10 +223,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="633" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601003894474" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601323747427">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601324388845">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601323747427" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601324388845" />
     <state x="471" y="304" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601057321734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
