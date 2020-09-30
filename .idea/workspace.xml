@@ -10,13 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 0.5">
+    <list default="true" id="1b2c3681-772f-434c-96c0-522fa0cd62ac" name="Default Changelist" comment="version 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/virtual_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtual_memory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/virtual_memory_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtual_memory_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601369685430</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="version 1.0">
+      <created>1601374278547</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601374278547</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -243,7 +245,8 @@
     <MESSAGE value="document" />
     <MESSAGE value="New logs" />
     <MESSAGE value="Test v.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test v.0.1" />
+    <MESSAGE value="version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601003869977">
@@ -266,17 +269,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="633" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601003894474" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601369686868">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601374279759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601369686868" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601374279759" />
     <state x="471" y="304" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601057321734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="471" y="304" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601057321734" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601120502693">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601374269746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601120502693" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601374269746" />
   </component>
 </project>

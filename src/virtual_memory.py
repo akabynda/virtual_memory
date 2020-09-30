@@ -96,12 +96,12 @@ class Memory:
         return LRU_log
 
     def OPT_algorithm(self, OPT_log, pages, time, name_file, algo):
+        file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', name_file), 'a')
         OPT_count = 0
         while pages != '':
             f1 = pages.index(';')
             page = pages[:f1]  # берем одну страницу
             pages = pages[(f1 + 1):]  # удаляем ее из списка
-            file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', name_file), 'a')
             OPT_t = OPT_log[0]
             OPT_p = OPT_log[1]
             OPT_bul = 0
@@ -129,16 +129,18 @@ class Memory:
                 OPT_t[i] += 10
             OPT_t[k] = 0
             OPT_log = [OPT_t, OPT_p]
-            return OPT_log
+        file.close()
         print('OPT counter:', OPT_count)
+        return OPT_log
+
 
     def LRU_algorithm(self, LRU_log, pages, time, name_file, algo):
         LRU_count = 0
+        file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', name_file), 'a')
         while pages != '':
             f1 = pages.index(';')
             page = pages[:f1]  # берем одну страницу
             pages = pages[(f1 + 1):]  # удаляем ее из списка
-            file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', name_file), 'a')
             LRU_p = LRU_log[1]
             LRU_t = LRU_log[0]
             LRU_m = LRU_log[2]
@@ -171,17 +173,17 @@ class Memory:
                     new_str ='/#' + str(k+1) + ' , ' + Memory().formating_time(LRU_t[k]) + ' , r , ' + str(LRU_p[k])
                 file.write(new_str.replace('/', '\n'))
             LRU_log = [LRU_t, LRU_p, LRU_m]
-            file.close()
-            return LRU_log # обновляем log
+        file.close()
         print('LRU counter:', LRU_count)
+        return LRU_log # обновляем log
 
     def FIFO_algorithm(self, FIFO_log, pages, time, name_file, algo):
         FIFO_count = 0
+        file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', name_file), 'a')
         while pages != '':
             f1 = pages.index(';')
             page = pages[:f1]  # берем одну страницу
             pages = pages[(f1 + 1):]  # удаляем ее из списка
-            file = open(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', name_file), 'a')
             FIFO_p = FIFO_log[1]
             FIFO_t = FIFO_log[0]
             FIFO_bul = 0  # проверяется есть ли данная страница в оперативной памяти
@@ -205,9 +207,10 @@ class Memory:
                     new_str ='/#' + str(k+1) + ' , ' + Memory().formating_time(FIFO_t[k]) + ' , r , ' + str(FIFO_p[k])
                 file.write(new_str.replace('/', '\n'))
             FIFO_log = [FIFO_t, FIFO_p]
-            file.close()
-            return FIFO_log # обновляем log
+        file.close()
         print('FIFO counter:', FIFO_count)
+        return FIFO_log # обновляем log
+
 
 def parser_args():
     p = argparse.ArgumentParser()
